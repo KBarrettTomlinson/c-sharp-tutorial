@@ -17,6 +17,22 @@ namespace GradeBook
             } else {
                 Console.WriteLine("Hello");
             }
+
+            double x = 64.28;
+            double y = 74.24;
+
+            double z = x + y;
+
+            Console.WriteLine(z);
+
+            double[] numbers = new double[3];
+            numbers[0] = 34.17;
+            numbers[1] = 77.45;
+            numbers[2] = 54.10;
+
+            double sum = numbers[0] + numbers[1] + numbers[2];
+
+            Console.WriteLine(sum);
             
         }
     }
