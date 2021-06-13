@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GradeBook
 {
@@ -33,7 +34,29 @@ namespace GradeBook
             double sum = numbers[0] + numbers[1] + numbers[2];
 
             Console.WriteLine(sum);
-            
+
+            double[] otherNumbers = new [] {34.52, 12.08, 47.04};
+            double otherSum = 0.0;
+            foreach(double otherNumber in otherNumbers) {
+                otherSum += otherNumber;
+            }
+
+            Console.WriteLine(otherSum);
+
+            List<double> grades = new List<double>();
+            grades.Add(75.2);
+            grades.Add(89.2);
+            grades.Add(82.7);
+
+            double gradeSum = 0.0;
+
+            foreach(double grade in grades) {
+                gradeSum += grade;
+            }
+
+            double gradeAverage = gradeSum / grades.Count;
+
+            Console.WriteLine($"The average grade is: {gradeAverage:N2}");
         }
     }
 }
